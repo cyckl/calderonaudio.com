@@ -1,0 +1,16 @@
+calderonaudio.com {
+	encode zstd gzip
+	header Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	header X-Frame-Options "SAMEORIGIN"
+	header X-Content-Type-Options "nosniff"
+	root * /home/git/calderon.is
+	file_server
+}
+
+www.calderonaudio.com {
+	encode zstd gzip
+	header Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	header X-Frame-Options "SAMEORIGIN"
+	header X-Content-Type-Options "nosniff"
+	redir https://calderonaudio.com{uri}
+}

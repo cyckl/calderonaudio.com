@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+	line-height: 175%; /* 3.5rem */
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	max-width: 80ch;
+	margin: 0 auto;
+	padding: 1em;
+	font-family: Inter, sans-serif;
+}
+
+header, main {
+	margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Overpass, sans-serif;
+	border-bottom: 1px solid #0002;
+	font-weight: 400;
+	margin-top: 1.5rem;
+}
+
+.bg-dark-1 {
+	background: #111;
+	color: #FFF;
+}
+
+.bg-light-1 {
+	color: #000;
+	background: #EEE;
+}
+
+nav {
+	display: flex;
+}
+
+nav > * {
+	margin: 0;
+}
+
+.logo {
+	font-family: "Overpass";
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	font-size: 18px;
+}
+
+header {
+	display: flex;
+	padding: 4rem 1rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	align-self: stretch;
+	border-radius: 0.75rem;
+}
+
+.header_text {
+	text-align: center;
+	font-family: Overpass;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+a {
+	color: unset;
+}
+
+a:hover {
+	color: #D30;
+	transition: ease-out 100ms;
+}
+
+.btn {
+	padding: 0.5em 1em;
+	background: #D30;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 600;
+	border-radius: 6px;
+}
+
+.btn:hover {
+	color: #FFF;
+	background: #333;
+	transition: ease-out 100ms;
+}
+
+div.list-horizontal {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 0.5rem 1.375rem;
+	align-self: stretch;
+	flex-wrap: wrap;
+}
+
+div.blocks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	align-self: stretch;
+	flex-wrap: wrap;
+}
+
+div.blocks > * {
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 0 0;
+	align-self: stretch;
+	border-radius: 0.75rem;
+}
+
+div.block > * {
+	font-weight: 700;
+	font-family: Overpass;
+}
+
+footer {
+	border-top: 1px dashed #0002;
+	padding-top: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background: #000;
+		color: #FFF;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		border-color: #FFF2;
+	}
+
+	.btn:hover {
+		background: #FFF;
+		color: #000;
+	}
+
+	footer {
+		border-color: #FFF2;
+	}
+}
